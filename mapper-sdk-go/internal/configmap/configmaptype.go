@@ -22,6 +22,7 @@ type DeviceInstance struct {
 	Twins            []Twin            `json:"twins,omitempty"`
 	Datas            Data              `json:"data,omitempty"`
 	PropertyVisitors []PropertyVisitor `json:"propertyVisitors,omitempty"`
+	Status           string            `json:"status,omitempty"` // Add the status field here
 }
 
 // DeviceModel is structure to store deviceModel in deviceProfile.json in configmap.
